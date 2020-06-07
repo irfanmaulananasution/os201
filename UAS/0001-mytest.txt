@@ -1,0 +1,22 @@
+Script started on Sun 07 Jun 2020 04:19:06 PM WIB
+irfan.maulana81@badak:~$ PS1="$ "
+$ echo $GitHubUser
+irfanmaulananasution
+$ echo $PSTAMP
+TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
+$ eval $PSTAMP
+200607-161926-f5c3-irfan.maulana81/>
+$ PS1="\$(eval \$PSTAMP)"
+200607-162213-5f40-irfan.maulana81/> date
+Sun Jun  7 16:22:25 WIB 2020
+200607-162225-1eac-irfan.maulana81/> gpg2 --list-keys
+/home/fasilkom/mahasiswa/i/irfan.maulana81/.gnupg/pubring.gpg
+-------------------------------------------------------------
+pub   4096R/D3203DB6 2020-06-07 [expires: 2021-06-07]
+uid       [ultimate] Irfan Maulana Nasution (key os) <irfanmaulananasution@gmail.com>
+sub   4096R/068E3D50 2020-06-07 [expires: 2021-06-07]
+
+200607-162237-400d-irfan.maulana81/> exit
+exit
+
+Script done on Sun 07 Jun 2020 04:23:04 PM WIB
