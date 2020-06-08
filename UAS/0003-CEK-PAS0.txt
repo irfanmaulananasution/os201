@@ -1,0 +1,43 @@
+Script started on Mon 08 Jun 2020 06:51:39 PM WIB
+irfan.maulana81@badak:~$ PS1="$ "
+$ echo $GitHubUser
+IrfanMaulanaNasution
+$ echo $PSTAMP
+TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
+$ PS1="\$(eval \$PSTAMP)"
+200608-185207-a85a-irfan.maulana81/> ls -F
+0000-mypub.txt  0001-mytest.txt  0002-mytest.txt.asc  003-CEK-PAS0.txt  coba.txt  Demos/  mykey.asc  OSPUB.txt  SHA1SUM  test2.txt
+200608-185252-3ce7-irfan.maulana81/> sha1sum 000* > SHA1SUM
+200608-185310-ea95-irfan.maulana81/> cat SHA1SUM
+9c7685335dd260287dca7930ffbe32ba26a26e5b  0000-mypub.txt
+91bff299ab32ec86c420266b89a9c3c4620db81f  0001-mytest.txt
+79057ab99349c8955aedf59cfe71fab50f7d850b  0002-mytest.txt.asc
+200608-185333-8273-irfan.maulana81/> gpg2 -sb -a SHA1SUM
+
+You need a passphrase to unlock the secret key for
+user: "Irfan Maulana Nasution (key os) <irfanmaulananasution@gmail.com>"
+4096-bit RSA key, ID D3203DB6, created 2020-06-07
+
+gpg: Invalid passphrase; please try again ...
+
+You need a passphrase to unlock the secret key for
+user: "Irfan Maulana Nasution (key os) <irfanmaulananasution@gmail.com>"
+4096-bit RSA key, ID D3203DB6, created 2020-06-07
+
+200608-185352-9a9f-irfan.maulana81/> ls -f
+003-CEK-PAS0.txt  test2.txt  0000-mypub.txt  OSPUB.txt  .bash_history        .            ..
+.bashrc           .profile   .bash_logout    mykey.asc  .gnupg               SHA1SUM.asc
+0001-mytest.txt   SHA1SUM    .viminfo        coba.txt   0002-mytest.txt.asc  Demos
+200608-185401-ad9e-irfan.maulana81/> gpg2 --verify SHA1SUM.asc
+gpg: assuming signed data in 'SHA1SUM'
+gpg: Signature made Mon 08 Jun 2020 06:53:52 PM WIB using RSA key ID D3203DB6
+gpg: Good signature from "Irfan Maulana Nasution (key os) <irfanmaulananasution@gmail.com>" [ultimate]
+200608-185408-9724-irfan.maulana81/> ls -f
+003-CEK-PAS0.txt  test2.txt  0000-mypub.txt  OSPUB.txt  .bash_history        .            ..
+.bashrc           .profile   .bash_logout    mykey.asc  .gnupg               SHA1SUM.asc
+0001-mytest.txt   SHA1SUM    .viminfo        coba.txt   0002-mytest.txt.asc  Demos
+200608-185413-d61a-irfan.maulana81/> mv 003-CEK-PAS0.txt 0003-CEK-PAS0.txt
+200608-185503-3d51-irfan.maulana81/> exit
+exit
+
+Script done on Mon 08 Jun 2020 06:55:05 PM WIB
