@@ -8,7 +8,7 @@
 * Laman ini dibuat dengan latar belakang menyelesaikan tugas UAS OS saya
 
 Berikut resource bermanfaat untuk OS : 
-<html><a href="url.md">resource</a></html>
+<html><a href="url.md">OS Resource</a></html>
 
 
 
