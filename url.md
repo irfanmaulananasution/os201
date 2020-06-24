@@ -1,3 +1,6 @@
+---
+permalink: /URLs/
+---
 <html>
   <body>
     <h1> USEFUL OS resource:<br>  </h1>
