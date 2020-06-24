@@ -8,7 +8,7 @@
 * Laman ini dibuat dengan latar belakang menyelesaikan tugas UAS OS saya
 
 Berikut resource bermanfaat untuk OS : 
-[OS Resource](url.md)
+[URLS](URLs/)
 
 
 
