@@ -1,11 +1,11 @@
 Script started on Tue 09 Jun 2020 11:58:23 AM WIB
-irfan.maulana81@badak:~$ PS1="$ "
+]0;irfan.maulana81@badak: ~irfan.maulana81@badak:~$ PS1="$ "
 $ echo $GitHubUser
 irfanmaulananasution
 $ echo $PSTAMP
 TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
 $ eval $PSTAMP
-200609-115840-29cf-irfan.maulana81/>
+200609-115840-29cf-irfan.maulana81/> 
 $ PS1="\$(eval \$PSTAMP)"
 200609-115843-9342-irfan.maulana81/> echo -e $CEKSAYA
 irfanmaulananasution ZCZCSCRIPTSTART 200607-161906 irfanmaulananasution
@@ -24,11 +24,11 @@ irfanmaulananasution jacobstmrg 200601-024836-aa76-jacob.marulitua/ 200601-02483
 irfanmaulananasution ZCZCSCRIPTSTOP 200601-024931 SEQOK
 
 200609-115858-fff9-irfan.maulana81/> echo -e $CEKSEBELA2
-irfanmaulananasution ZCZCSCRIPTSTART 200605-111231 JahnsMichael
-irfanmaulananasution JahnsMichael 200605-231337-0d84-key/ 200605-231337 SEQOK SUMOK 0d84679a
-irfanmaulananasution JahnsMichael 200605-231411-11a6-key/ 200605-231411 SEQOK SUMOK 11a67768
-irfanmaulananasution JahnsMichael 200605-231415-4af0-key/ 200605-231415 SEQOK SUMOK 4af012bd
-irfanmaulananasution JahnsMichael 200605-231427-e3c3-key/ 200605-231427 SEQOK SUMOK e3c3441d
+irfanmaulananasution ZCZCSCRIPTSTART 200605-111231 JahnsMichael 
+irfanmaulananasution JahnsMichael 200605-231337-0d84-key/ 200605-231337 SEQOK SUMOK 0d84679a 
+irfanmaulananasution JahnsMichael 200605-231411-11a6-key/ 200605-231411 SEQOK SUMOK 11a67768 
+irfanmaulananasution JahnsMichael 200605-231415-4af0-key/ 200605-231415 SEQOK SUMOK 4af012bd 
+irfanmaulananasution JahnsMichael 200605-231427-e3c3-key/ 200605-231427 SEQOK SUMOK e3c3441d 
 irfanmaulananasution ZCZCSCRIPTSTOP 200605-111447 SEQOK
 
 200609-115902-16aa-irfan.maulana81/> exit

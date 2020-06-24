@@ -1,11 +1,11 @@
 Script started on Sun 07 Jun 2020 04:19:06 PM WIB
-irfan.maulana81@badak:~$ PS1="$ "
+]0;irfan.maulana81@badak: ~irfan.maulana81@badak:~$ PS1="$ "
 $ echo $GitHubUser
 irfanmaulananasution
 $ echo $PSTAMP
 TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
 $ eval $PSTAMP
-200607-161926-f5c3-irfan.maulana81/>
+200607-161926-f5c3-irfan.maulana81/> 
 $ PS1="\$(eval \$PSTAMP)"
 200607-162213-5f40-irfan.maulana81/> date
 Sun Jun  7 16:22:25 WIB 2020
